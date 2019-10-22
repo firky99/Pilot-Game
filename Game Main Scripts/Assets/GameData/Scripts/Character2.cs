@@ -15,16 +15,11 @@ public class Character2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButton(1)){
+		if(Input.GetMouseButton(0)){
 			mousePosition = Input.mousePosition;
 			mousePosition = mainCamera.ScreenToWorldPoint (mousePosition);
 			transform.position = Vector2.Lerp (transform.position, mousePosition, moveSpeed);
 		}
 	}
-
-	//void OnCollisionEnter (CircleCollider2D collision ){
-		//if(collision.gameObject.tag == "Char1"){
-			//Physics.IgnoreCollision(collision.collider, GetComponent<CircleCollider2D>());
-		//}
-	//}
+		
 }
