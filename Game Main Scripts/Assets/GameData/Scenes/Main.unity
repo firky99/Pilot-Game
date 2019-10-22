@@ -626,7 +626,6 @@ GameObject:
   - component: {fileID: 1859224435}
   - component: {fileID: 1859224434}
   - component: {fileID: 1859224438}
-  - component: {fileID: 1859224439}
   m_Layer: 0
   m_Name: character2
   m_TagString: Char2
@@ -647,6 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
   mainCamera: {fileID: 87917873}
+  char1: {fileID: 1587272616}
 --- !u!58 &1859224435
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -739,17 +739,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1859224439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859224433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab096ed7ca66e34eb8209f342660208, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1990162108
 GameObject:
   m_ObjectHideFlags: 0

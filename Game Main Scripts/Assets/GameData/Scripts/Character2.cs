@@ -8,9 +8,11 @@ public class Character2 : MonoBehaviour {
 	public float moveSpeed = 0.1f;
 	public Camera mainCamera;
 
+	public Transform char1;
+
 	// Use this for initialization
 	void Start () {
-		
+		Physics2D.IgnoreCollision(char1.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 	}
 	
 	// Update is called once per frame
@@ -21,5 +23,4 @@ public class Character2 : MonoBehaviour {
 			transform.position = Vector2.Lerp (transform.position, mousePosition, moveSpeed);
 		}
 	}
-		
 }
