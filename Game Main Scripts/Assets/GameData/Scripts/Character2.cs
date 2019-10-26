@@ -10,6 +10,9 @@ public class Character2 : MonoBehaviour {
 
 	public Transform char1;
 
+	[SerializeField]
+	Animator animator;
+
 	// Use this for initialization
 	void Start () {
 		Physics2D.IgnoreCollision(char1.GetComponent<Collider2D>(), GetComponent<Collider2D>());
@@ -21,6 +24,26 @@ public class Character2 : MonoBehaviour {
 			mousePosition = Input.mousePosition;
 			mousePosition = mainCamera.ScreenToWorldPoint (mousePosition);
 			transform.position = Vector2.Lerp (transform.position, mousePosition, moveSpeed);
+			
+		if(animator.GetInteger("State")!=2)
+			animator.SetInteger("State",1);
+
+			
+		}else
+		{
+			if(animator.GetInteger("State")!=2)
+			animator.SetInteger("State",0);
 		}
+
 	}
+
+	void OnCollisionEnter2D (Collision2D myCol){
+		if(myCol.gameObject.tag == "Obstacles1"){
+			animator.SetInteger("State",2);
+			}
+		}
+
+		public void backToIdle(){
+			animator.SetInteger("State",0);
+		}
 }

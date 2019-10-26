@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Character1 : MonoBehaviour {
+
+	public Transform Character2;
+	
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +15,10 @@ public class Character1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //transform.LookAt(
+			//new Vector3(Character2.position.x, 
+						//	transform.position.y,
+						//	transform.position.z));
 		
 	}
 
