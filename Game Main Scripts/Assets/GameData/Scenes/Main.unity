@@ -1519,7 +1519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1102825090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1806,8 +1806,15 @@ MonoBehaviour:
   Obstacle:
   - {fileID: 1205229913037428, guid: 6626179b807adb54f994cbe1cfcb9bfa, type: 3}
   - {fileID: 1330293034809812, guid: 050864fe77a39db479fd51fb351edfdf, type: 3}
-  minTime: 1
-  maxTime: 20
+  timeParts:
+  - minTime: 0
+    maxTime: 10
+    totalSpawning: 1
+    totalEnemyType: 1
+  - minTime: 10
+    maxTime: 20
+    totalSpawning: 3
+    totalEnemyType: 2
   MinSpawningPosition: {x: -2.4, y: 5.4, z: 0}
   MaxSpawningPosition: {x: 2.4, y: 5.4, z: 0}
 --- !u!4 &1203863145
@@ -1914,7 +1921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1278583202
 Transform:
   m_ObjectHideFlags: 0
@@ -2258,7 +2265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1518217137
 RectTransform:
   m_ObjectHideFlags: 0
