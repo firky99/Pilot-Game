@@ -7,19 +7,17 @@ public class Character1 : MonoBehaviour {
 
 	public Transform Character2;
 	
-
-	// Use this for initialization
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-        //transform.LookAt(
-			//new Vector3(Character2.position.x, 
-						//	transform.position.y,
-						//	transform.position.z));
-		
+	void Update () 
+	{
+		/*
+			Quaternion rotation = Quaternion.LookRotation
+				(Character2.transform.position - transform.position, Character2.TransformDirection(Vector3.down));
+				transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w); 
+		*/
 	}
 
 	void OnCollisionEnter2D (Collision2D myCol){

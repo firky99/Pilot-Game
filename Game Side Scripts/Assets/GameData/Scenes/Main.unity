@@ -1519,7 +1519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1102825090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1805,9 +1805,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obstacle:
   - {fileID: 1205229913037428, guid: 6626179b807adb54f994cbe1cfcb9bfa, type: 3}
-  - {fileID: 1330293034809812, guid: 050864fe77a39db479fd51fb351edfdf, type: 3}
-  minTime: 1
-  maxTime: 20
+  - {fileID: 2968808191767136632, guid: 050864fe77a39db479fd51fb351edfdf, type: 3}
+  - {fileID: 6274272876539996593, guid: b36d1e61a9e7e9b49aba35ccc58f966a, type: 3}
+  - {fileID: 5803245928953606352, guid: dd7f904cf4354f046a182136274882ec, type: 3}
+  timeParts:
+  - minTime: 1
+    maxTime: 5
+    totalSpawning: 2
+    totalEnemyType: 3
+  - minTime: 16
+    maxTime: 18
+    totalSpawning: 3
+    totalEnemyType: 2
+  - minTime: 20
+    maxTime: 29
+    totalSpawning: 5
+    totalEnemyType: 4
+  - minTime: 30
+    maxTime: 35
+    totalSpawning: 2
+    totalEnemyType: 3
+  - minTime: 38
+    maxTime: 40
+    totalSpawning: 3
+    totalEnemyType: 3
+  - minTime: 6
+    maxTime: 9
+    totalSpawning: 5
+    totalEnemyType: 3
+  - minTime: 10
+    maxTime: 15
+    totalSpawning: 6
+    totalEnemyType: 4
+  - minTime: 42
+    maxTime: 50
+    totalSpawning: 3
+    totalEnemyType: 4
+  - minTime: 52
+    maxTime: 60
+    totalSpawning: 3
+    totalEnemyType: 4
   MinSpawningPosition: {x: -2.4, y: 5.4, z: 0}
   MaxSpawningPosition: {x: 2.4, y: 5.4, z: 0}
 --- !u!4 &1203863145
@@ -1914,7 +1951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1278583202
 Transform:
   m_ObjectHideFlags: 0
@@ -2258,7 +2295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1518217137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2294,6 +2331,7 @@ GameObject:
   - component: {fileID: 1587272614}
   - component: {fileID: 1587272617}
   - component: {fileID: 1587272618}
+  - component: {fileID: 1587272619}
   m_Layer: 8
   m_Name: Character1
   m_TagString: Char1
@@ -2355,7 +2393,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 99
-  m_Sprite: {fileID: 21300000, guid: 3071c5f1a0fde074391e988406788829, type: 3}
+  m_Sprite: {fileID: -8286991331657916488, guid: 19fdcf8bc9c43b247aa7c06dd7e6f024,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2375,7 +2414,7 @@ Transform:
   m_GameObject: {fileID: 1587272613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2.95, z: 11}
-  m_LocalScale: {x: 1.0144887, y: 1.0144886, z: 1.0144885}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1278583202}
   m_RootOrder: 2
@@ -2406,6 +2445,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SortingLayerName: Default
   SortingOrder: 9999
+--- !u!95 &1587272619
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587272613}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d0e0cfbed173dd4489cf2c874442c79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1617094229
 GameObject:
   m_ObjectHideFlags: 0

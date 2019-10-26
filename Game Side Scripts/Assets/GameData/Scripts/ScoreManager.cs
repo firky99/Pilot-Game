@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour {
-
+public class ScoreManager : MonoBehaviour 
+{
+	public static ScoreManager instance;
 	public Text scoreText;
 	public Text highScoreText;
 
@@ -14,6 +15,11 @@ public class ScoreManager : MonoBehaviour {
 	public float pointsPerSecond;
 
 	public bool scoreIncreasing;
+
+	void Awake()
+	{
+		instance = this;
+	}
 
 	// Use this for initialization
 	void Start () {
