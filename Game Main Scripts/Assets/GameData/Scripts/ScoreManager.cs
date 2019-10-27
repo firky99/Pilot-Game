@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour 
 {
@@ -43,20 +42,5 @@ public class ScoreManager : MonoBehaviour
 
 		scoreText.text = "Score: " + Mathf.Round (scoreCount);
 		highScoreText.text = "HighScore: " + Mathf.Round (highScoreCount);
-
-	}
-
-	//punyo kau tadi kan cak ini fir
-	//nah error dio kan?
-	//iyo errro
-	// nah kurang ini ( samo ini ) -_-
-	//setiap void ado ()
-	//eh aku lah buat () tadi kak tapi didalemny ad teks wkwk
-	//wkwkwk tebbalek tadi, gek kito belajar stuktur dasar lagi lah dengan noval dan irwan jugo
-	//sapp
-
-
-	public void backToHome (){
-		SceneManager.LoadScene("Main");
 	}
 }

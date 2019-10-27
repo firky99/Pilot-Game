@@ -42,11 +42,13 @@ public class RespawnManager : MonoBehaviour
                 {   
                     for(int j = 0; j < timeParts[i].totalSpawning; j++)
                     {
-                        Instantiate(Obstacle[Random.Range(0,timeParts[i].totalEnemyType)], 
+                        GameObject temp = Instantiate(Obstacle[Random.Range(0,timeParts[i].totalEnemyType)], 
                             new Vector3(Random.Range(MinSpawningPosition.x, MaxSpawningPosition.x),
                                         Random.Range(MinSpawningPosition.y, MaxSpawningPosition.y),
                                         Random.Range(MinSpawningPosition.z, MaxSpawningPosition.z))
                             ,new Quaternion());
+
+                        temp.transform.SetParent(transform);
                     }
                     currentTimeSpawn = (int)ScoreManager.instance.scoreCount;
                     break;
