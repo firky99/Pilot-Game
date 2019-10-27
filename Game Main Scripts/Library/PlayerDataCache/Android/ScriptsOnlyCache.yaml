@@ -87,59 +87,59 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9692}
+      Script: {instanceID: 9696}
     - Class: 114
-      Script: {instanceID: 9734}
+      Script: {instanceID: 9738}
     - Class: 114
-      Script: {instanceID: 9754}
+      Script: {instanceID: 9758}
     - Class: 114
-      Script: {instanceID: 9830}
+      Script: {instanceID: 9834}
     - Class: 114
-      Script: {instanceID: 9832}
-    - Class: 114
-      Script: {instanceID: 9848}
+      Script: {instanceID: 9836}
     - Class: 114
       Script: {instanceID: 9860}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9872}
     - Class: 114
-      Script: {instanceID: 9896}
+      Script: {instanceID: 9892}
     - Class: 114
       Script: {instanceID: 9908}
     - Class: 114
-      Script: {instanceID: 9936}
+      Script: {instanceID: 9920}
     - Class: 114
-      Script: {instanceID: 9946}
+      Script: {instanceID: 9948}
     - Class: 114
-      Script: {instanceID: 10136}
+      Script: {instanceID: 9958}
     - Class: 114
-      Script: {instanceID: 10158}
+      Script: {instanceID: 10150}
     - Class: 114
-      Script: {instanceID: 10438}
+      Script: {instanceID: 10172}
     - Class: 114
-      Script: {instanceID: 10468}
+      Script: {instanceID: 10452}
     - Class: 114
-      Script: {instanceID: 10758}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10842}
+      Script: {instanceID: 10742}
     - Class: 114
-      Script: {instanceID: 10908}
+      Script: {instanceID: 10780}
     - Class: 114
-      Script: {instanceID: 11278}
+      Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 10870}
     - Class: 114
-      Script: {instanceID: 11682}
+      Script: {instanceID: 10938}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 11940}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 43252}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 46806}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 91242}
+      Script: {instanceID: 11938}
+    - Class: 114
+      Script: {instanceID: 11974}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -327,7 +327,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 2b1214f6f6c3090dfa259c457c032359
+      Hash: c2345d67580690e15a27e0ab0a57af3b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Character1
@@ -472,6 +472,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackgroundEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkCallbacks
@@ -499,6 +505,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 704dcd31abc789439bc3f3cd10b58c2b
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 9a65634b0f2713c6c2d2dd4d09159a88
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenSettings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -625,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 32edd4f76e0bf70ba98e844aadb85106
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HomeMenu
   - hash:
       serializedVersion: 2
       Hash: 1dcb82730d983b77cec736c6ef19f814
@@ -757,31 +781,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 32edd4f76e0bf70ba98e844aadb85106
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HomeMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 704dcd31abc789439bc3f3cd10b58c2b
-    assemblyName: DOTween.dll
-    namespaceName: DG.Tweening.Core
-    className: DOTweenComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 9a65634b0f2713c6c2d2dd4d09159a88
-    assemblyName: DOTween.dll
-    namespaceName: DG.Tweening.Core
-    className: DOTweenSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BackgroundEffect
   platform: 13
   scenePathNames:
   - Assets/GameData/Scenes/Main.unity
-  playerPath: C:/Hisbullah/Hisa Games/Pilot-Game/Game Main Scripts/PilotGames 1.1.apk
+  playerPath: C:/Hisbullah/Hisa Games/Pilot-Game/Game Main Scripts/PilotGames 1.2.apk
