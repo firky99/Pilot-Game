@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class Character1 : MonoBehaviour {
+	
+	public GameObject gameOver;
+	public GameObject playGameUI;
+	public GameObject playGameMain;
 
 	public Transform Character2;
 	public Transform[] moveTarget;
+
 
 	[SerializeField]
 	Animator animator;
@@ -95,7 +100,10 @@ public class Character1 : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D myCol){
 		if(myCol.gameObject.tag == "Obstacles1"){
-			SceneManager.LoadScene("Main");
+			//SceneManager.LoadScene("Main"); ambek yg ini
+			gameOver.SetActive(true);
+			playGameUI.SetActive(false);
+			playGameMain.SetActive(false);
 		}
 	}
 }

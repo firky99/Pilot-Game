@@ -66,6 +66,7 @@
      <Compile Include="Assets\GameData\Scripts\Character1.cs" />
      <Compile Include="Assets\GameData\Scripts\Character2.cs" />
      <Compile Include="Assets\GameData\Scripts\ExitGame.cs" />
+     <Compile Include="Assets\GameData\Scripts\GameOVerMenu.cs" />
      <Compile Include="Assets\GameData\Scripts\HomeMenu.cs" />
      <Compile Include="Assets\GameData\Scripts\Obstacles.cs" />
      <Compile Include="Assets\GameData\Scripts\RespawnManager.cs" />
