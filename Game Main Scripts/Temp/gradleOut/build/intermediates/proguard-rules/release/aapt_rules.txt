@@ -1,0 +1,2 @@
+# Referenced at C:\Hisbullah\Hisa Games\Pilot-Game\Game Main Scripts\Temp\gradleOut\build\intermediates\merged_manifests\release\AndroidManifest.xml:40
+-keep class com.unity3d.player.UnityPlayerActivity { <init>(); }
