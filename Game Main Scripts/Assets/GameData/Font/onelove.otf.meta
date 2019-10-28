@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c4a814a92377c8047ac992a62c09ac8c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: onelove
+  fontNames:
+  - onelove
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4396bdeb1bd55334d98326bff6d12fa2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

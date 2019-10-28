@@ -40,7 +40,7 @@ public class ScoreManager : MonoBehaviour
 			PlayerPrefs.SetFloat ("HighScore", highScoreCount);
 		}
 
-		scoreText.text = "Score: " + Mathf.Round (scoreCount);
-		highScoreText.text = "HighScore: " + Mathf.Round (highScoreCount);
+		scoreText.text = Mathf.Round (scoreCount) + " hari";
+		highScoreText.text = Mathf.Round (highScoreCount) + " hari";
 	}
 }
